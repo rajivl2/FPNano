@@ -1,0 +1,739 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		618AF08F2301737C0036076D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF08E2301737C0036076D /* AppDelegate.swift */; };
+		618AF0912301737C0036076D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF0902301737C0036076D /* HomeViewController.swift */; };
+		618AF0962301737F0036076D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 618AF0952301737F0036076D /* Assets.xcassets */; };
+		618AF0992301737F0036076D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 618AF0972301737F0036076D /* LaunchScreen.storyboard */; };
+		618AF0A42301737F0036076D /* FordPassNanoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF0A32301737F0036076D /* FordPassNanoTests.swift */; };
+		618AF0AF2301737F0036076D /* FordPassNanoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF0AE2301737F0036076D /* FordPassNanoUITests.swift */; };
+		618AF0BD230174B10036076D /* SnapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 618AF0BC230174B10036076D /* SnapKit.framework */; };
+		618AF0BE230174B10036076D /* SnapKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 618AF0BC230174B10036076D /* SnapKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		618AF0C2230174E60036076D /* HomeCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF0C1230174E60036076D /* HomeCoordinator.swift */; };
+		618AF2A8230180440036076D /* MyVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2A7230180440036076D /* MyVehicleViewController.swift */; };
+		618AF2AA230180590036076D /* MyVehicleDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2A9230180590036076D /* MyVehicleDetailsViewController.swift */; };
+		618AF2AC230180930036076D /* MyAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2AB230180930036076D /* MyAccountViewController.swift */; };
+		618AF2AE230180BD0036076D /* HelpTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2AD230180BD0036076D /* HelpTopicsViewController.swift */; };
+		618AF2B0230185FC0036076D /* MyVehicleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2AF230185FC0036076D /* MyVehicleCoordinator.swift */; };
+		618AF2B22301860D0036076D /* MyAccountCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2B12301860D0036076D /* MyAccountCoordinator.swift */; };
+		618AF2B4230186270036076D /* HelpSectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2B3230186270036076D /* HelpSectionCoordinator.swift */; };
+		618AF2B6230187300036076D /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2B5230187300036076D /* Coordinator.swift */; };
+		618AF2B823018ECE0036076D /* RoadSideAssistanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 618AF2B723018ECE0036076D /* RoadSideAssistanceViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		618AF0A02301737F0036076D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618AF0832301737C0036076D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618AF08A2301737C0036076D;
+			remoteInfo = FordPassNano;
+		};
+		618AF0AB2301737F0036076D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 618AF0832301737C0036076D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 618AF08A2301737C0036076D;
+			remoteInfo = FordPassNano;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		618AF0BF230174B10036076D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				618AF0BE230174B10036076D /* SnapKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		618AF08B2301737C0036076D /* FordPassNano.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FordPassNano.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		618AF08E2301737C0036076D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		618AF0902301737C0036076D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		618AF0952301737F0036076D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		618AF0982301737F0036076D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		618AF09A2301737F0036076D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618AF09F2301737F0036076D /* FordPassNanoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FordPassNanoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		618AF0A32301737F0036076D /* FordPassNanoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordPassNanoTests.swift; sourceTree = "<group>"; };
+		618AF0A52301737F0036076D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618AF0AA2301737F0036076D /* FordPassNanoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FordPassNanoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		618AF0AE2301737F0036076D /* FordPassNanoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FordPassNanoUITests.swift; sourceTree = "<group>"; };
+		618AF0B02301737F0036076D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		618AF0BC230174B10036076D /* SnapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SnapKit.framework; path = Carthage/Build/iOS/SnapKit.framework; sourceTree = "<group>"; };
+		618AF0C1230174E60036076D /* HomeCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeCoordinator.swift; sourceTree = "<group>"; };
+		618AF2A7230180440036076D /* MyVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVehicleViewController.swift; sourceTree = "<group>"; };
+		618AF2A9230180590036076D /* MyVehicleDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVehicleDetailsViewController.swift; sourceTree = "<group>"; };
+		618AF2AB230180930036076D /* MyAccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountViewController.swift; sourceTree = "<group>"; };
+		618AF2AD230180BD0036076D /* HelpTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpTopicsViewController.swift; sourceTree = "<group>"; };
+		618AF2AF230185FC0036076D /* MyVehicleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyVehicleCoordinator.swift; sourceTree = "<group>"; };
+		618AF2B12301860D0036076D /* MyAccountCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountCoordinator.swift; sourceTree = "<group>"; };
+		618AF2B3230186270036076D /* HelpSectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpSectionCoordinator.swift; sourceTree = "<group>"; };
+		618AF2B5230187300036076D /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		618AF2B723018ECE0036076D /* RoadSideAssistanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoadSideAssistanceViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		618AF0882301737C0036076D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618AF0BD230174B10036076D /* SnapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF09C2301737F0036076D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF0A72301737F0036076D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		618AF0822301737C0036076D = {
+			isa = PBXGroup;
+			children = (
+				618AF0BC230174B10036076D /* SnapKit.framework */,
+				618AF08D2301737C0036076D /* FordPassNano */,
+				618AF0A22301737F0036076D /* FordPassNanoTests */,
+				618AF0AD2301737F0036076D /* FordPassNanoUITests */,
+				618AF08C2301737C0036076D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		618AF08C2301737C0036076D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				618AF08B2301737C0036076D /* FordPassNano.app */,
+				618AF09F2301737F0036076D /* FordPassNanoTests.xctest */,
+				618AF0AA2301737F0036076D /* FordPassNanoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		618AF08D2301737C0036076D /* FordPassNano */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2C223019BBE0036076D /* Common */,
+				618AF2BB23019B6C0036076D /* HelpDection */,
+				618AF2BA23019B630036076D /* MyAccount */,
+				618AF2B923019B580036076D /* MyVehicle */,
+				618AF08E2301737C0036076D /* AppDelegate.swift */,
+				618AF0952301737F0036076D /* Assets.xcassets */,
+				618AF0972301737F0036076D /* LaunchScreen.storyboard */,
+				618AF09A2301737F0036076D /* Info.plist */,
+			);
+			path = FordPassNano;
+			sourceTree = "<group>";
+		};
+		618AF0A22301737F0036076D /* FordPassNanoTests */ = {
+			isa = PBXGroup;
+			children = (
+				618AF0A32301737F0036076D /* FordPassNanoTests.swift */,
+				618AF0A52301737F0036076D /* Info.plist */,
+			);
+			path = FordPassNanoTests;
+			sourceTree = "<group>";
+		};
+		618AF0AD2301737F0036076D /* FordPassNanoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				618AF0AE2301737F0036076D /* FordPassNanoUITests.swift */,
+				618AF0B02301737F0036076D /* Info.plist */,
+			);
+			path = FordPassNanoUITests;
+			sourceTree = "<group>";
+		};
+		618AF2B923019B580036076D /* MyVehicle */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2C123019BB50036076D /* Views */,
+				618AF2C023019BAD0036076D /* Coordinators */,
+			);
+			path = MyVehicle;
+			sourceTree = "<group>";
+		};
+		618AF2BA23019B630036076D /* MyAccount */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2BF23019BA20036076D /* Coordinators */,
+				618AF2BE23019B990036076D /* Views */,
+			);
+			path = MyAccount;
+			sourceTree = "<group>";
+		};
+		618AF2BB23019B6C0036076D /* HelpDection */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2BD23019B8F0036076D /* Views */,
+				618AF2BC23019B850036076D /* Coordinators */,
+			);
+			path = HelpDection;
+			sourceTree = "<group>";
+		};
+		618AF2BC23019B850036076D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2B3230186270036076D /* HelpSectionCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		618AF2BD23019B8F0036076D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2AD230180BD0036076D /* HelpTopicsViewController.swift */,
+				618AF2B723018ECE0036076D /* RoadSideAssistanceViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		618AF2BE23019B990036076D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2AB230180930036076D /* MyAccountViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		618AF2BF23019BA20036076D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2B12301860D0036076D /* MyAccountCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		618AF2C023019BAD0036076D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2AF230185FC0036076D /* MyVehicleCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		618AF2C123019BB50036076D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2A7230180440036076D /* MyVehicleViewController.swift */,
+				618AF2A9230180590036076D /* MyVehicleDetailsViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		618AF2C223019BBE0036076D /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2C423019BCB0036076D /* Views */,
+				618AF2C323019BC40036076D /* Coordinators */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		618AF2C323019BC40036076D /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				618AF2B5230187300036076D /* Coordinator.swift */,
+				618AF0C1230174E60036076D /* HomeCoordinator.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		618AF2C423019BCB0036076D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				618AF0902301737C0036076D /* HomeViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		618AF08A2301737C0036076D /* FordPassNano */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618AF0B32301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNano" */;
+			buildPhases = (
+				618AF0872301737C0036076D /* Sources */,
+				618AF0882301737C0036076D /* Frameworks */,
+				618AF0892301737C0036076D /* Resources */,
+				618AF0BF230174B10036076D /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FordPassNano;
+			productName = FordPassNano;
+			productReference = 618AF08B2301737C0036076D /* FordPassNano.app */;
+			productType = "com.apple.product-type.application";
+		};
+		618AF09E2301737F0036076D /* FordPassNanoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618AF0B62301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNanoTests" */;
+			buildPhases = (
+				618AF09B2301737F0036076D /* Sources */,
+				618AF09C2301737F0036076D /* Frameworks */,
+				618AF09D2301737F0036076D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618AF0A12301737F0036076D /* PBXTargetDependency */,
+			);
+			name = FordPassNanoTests;
+			productName = FordPassNanoTests;
+			productReference = 618AF09F2301737F0036076D /* FordPassNanoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		618AF0A92301737F0036076D /* FordPassNanoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 618AF0B92301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNanoUITests" */;
+			buildPhases = (
+				618AF0A62301737F0036076D /* Sources */,
+				618AF0A72301737F0036076D /* Frameworks */,
+				618AF0A82301737F0036076D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				618AF0AC2301737F0036076D /* PBXTargetDependency */,
+			);
+			name = FordPassNanoUITests;
+			productName = FordPassNanoUITests;
+			productReference = 618AF0AA2301737F0036076D /* FordPassNanoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		618AF0832301737C0036076D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Ford Labs";
+				TargetAttributes = {
+					618AF08A2301737C0036076D = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					618AF09E2301737F0036076D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 618AF08A2301737C0036076D;
+					};
+					618AF0A92301737F0036076D = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 618AF08A2301737C0036076D;
+					};
+				};
+			};
+			buildConfigurationList = 618AF0862301737C0036076D /* Build configuration list for PBXProject "FordPassNano" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 618AF0822301737C0036076D;
+			productRefGroup = 618AF08C2301737C0036076D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				618AF08A2301737C0036076D /* FordPassNano */,
+				618AF09E2301737F0036076D /* FordPassNanoTests */,
+				618AF0A92301737F0036076D /* FordPassNanoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		618AF0892301737C0036076D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618AF0992301737F0036076D /* LaunchScreen.storyboard in Resources */,
+				618AF0962301737F0036076D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF09D2301737F0036076D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF0A82301737F0036076D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		618AF0872301737C0036076D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618AF0912301737C0036076D /* HomeViewController.swift in Sources */,
+				618AF2B4230186270036076D /* HelpSectionCoordinator.swift in Sources */,
+				618AF2AA230180590036076D /* MyVehicleDetailsViewController.swift in Sources */,
+				618AF2B22301860D0036076D /* MyAccountCoordinator.swift in Sources */,
+				618AF2AC230180930036076D /* MyAccountViewController.swift in Sources */,
+				618AF2B823018ECE0036076D /* RoadSideAssistanceViewController.swift in Sources */,
+				618AF2AE230180BD0036076D /* HelpTopicsViewController.swift in Sources */,
+				618AF2B6230187300036076D /* Coordinator.swift in Sources */,
+				618AF2A8230180440036076D /* MyVehicleViewController.swift in Sources */,
+				618AF08F2301737C0036076D /* AppDelegate.swift in Sources */,
+				618AF0C2230174E60036076D /* HomeCoordinator.swift in Sources */,
+				618AF2B0230185FC0036076D /* MyVehicleCoordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF09B2301737F0036076D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618AF0A42301737F0036076D /* FordPassNanoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		618AF0A62301737F0036076D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				618AF0AF2301737F0036076D /* FordPassNanoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		618AF0A12301737F0036076D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618AF08A2301737C0036076D /* FordPassNano */;
+			targetProxy = 618AF0A02301737F0036076D /* PBXContainerItemProxy */;
+		};
+		618AF0AC2301737F0036076D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 618AF08A2301737C0036076D /* FordPassNano */;
+			targetProxy = 618AF0AB2301737F0036076D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		618AF0972301737F0036076D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				618AF0982301737F0036076D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		618AF0B12301737F0036076D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		618AF0B22301737F0036076D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		618AF0B42301737F0036076D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6STTB54X7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FordPassNano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		618AF0B52301737F0036076D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6STTB54X7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = FordPassNano/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNano;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		618AF0B72301737F0036076D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordPassNanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FordPassNano.app/FordPassNano";
+			};
+			name = Debug;
+		};
+		618AF0B82301737F0036076D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordPassNanoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNanoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FordPassNano.app/FordPassNano";
+			};
+			name = Release;
+		};
+		618AF0BA2301737F0036076D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordPassNanoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNanoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FordPassNano;
+			};
+			name = Debug;
+		};
+		618AF0BB2301737F0036076D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FordPassNanoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = f.FordPassNanoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FordPassNano;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		618AF0862301737C0036076D /* Build configuration list for PBXProject "FordPassNano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618AF0B12301737F0036076D /* Debug */,
+				618AF0B22301737F0036076D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618AF0B32301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNano" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618AF0B42301737F0036076D /* Debug */,
+				618AF0B52301737F0036076D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618AF0B62301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNanoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618AF0B72301737F0036076D /* Debug */,
+				618AF0B82301737F0036076D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		618AF0B92301737F0036076D /* Build configuration list for PBXNativeTarget "FordPassNanoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				618AF0BA2301737F0036076D /* Debug */,
+				618AF0BB2301737F0036076D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 618AF0832301737C0036076D /* Project object */;
+}
