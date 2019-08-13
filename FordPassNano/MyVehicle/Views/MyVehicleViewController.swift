@@ -7,10 +7,21 @@
 //
 
 import UIKit
+import RxSwift
 
 class MyVehicleViewController: UIViewController {
 
     weak var delegate: MyVehicleControllerDelegate?
+
+    private var myVehicle: VehicleDetails?
+    
+    var disposebag = DisposeBag()
+    
+    private let selectedVehicleSubject = BehaviorSubject(value: VehicleDetails(vehicleName: "Ford F-150", vin: "V00998ENG9087M8876", frontRightTirePressure: "33kPa", frontLefttirePressure: "33kPA", rearRightTirePressure: "35kPA", rearLeftTirePressure: "35kPA", fuelLevel: "70%"))
+    
+    var selectedVehicle: Observable<VehicleDetails>{
+        return selectedVehicleSubject.asObservable()
+    }
     
     private let screenlabel: UILabel = {
         let name = UILabel()
@@ -20,7 +31,7 @@ class MyVehicleViewController: UIViewController {
         return name
     }()
     
-    private let image = UIImageView(image: UIImage(named: "default"))
+    private let image = UIImageView(image: UIImage(named: "Ford F-150"))
     
     private let vehicleName: UILabel = {
         let name = UILabel()
@@ -33,9 +44,10 @@ class MyVehicleViewController: UIViewController {
     private let myVehicleDetailsButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Vehicle Details", for: .normal)
-        btn.backgroundColor = UIColor.clear
         btn.setTitleColor(.black, for: .normal)
         btn.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
+        btn.backgroundColor = UIColor(red: 120/255, green: 180/255, blue: 200/255, alpha: 1)
+        btn.layer.cornerRadius = 4
         return btn
     }()
     
@@ -85,7 +97,12 @@ class MyVehicleViewController: UIViewController {
     }
     
     @objc func myVehicleDetailsButtonTapped(){
-        delegate?.myVehicleDetailsButtonTapped(myVehicle: VehicleDetails(vehicleName: "Ford F-150", vin: "V123ENG456M2019", frontRightTirePressure: "33kPA", frontLefttirePressure: "34kPA", rearRightTirePressure: "35kPA", rearLeftTirePressure: "35kPA", fuelLevel: "70%"))
+        
+        selectedVehicle
+            .subscribe(onNext: { [weak self] vehicleDetails in
+            self?.delegate?.myVehicleDetailsButtonTapped(myVehicle: vehicleDetails)
+        }).disposed(by: disposebag)
+        
     }
 }
 

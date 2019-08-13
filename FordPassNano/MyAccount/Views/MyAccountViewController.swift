@@ -21,7 +21,7 @@ class MyAccountViewController: UIViewController {
     private let nameLabel: UILabel = {
         let name = UILabel()
         name.text = "Name"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -29,7 +29,7 @@ class MyAccountViewController: UIViewController {
     private let emailLabel: UILabel = {
         let name = UILabel()
         name.text = "Email"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -37,7 +37,7 @@ class MyAccountViewController: UIViewController {
     private let stateLabel: UILabel = {
         let name = UILabel()
         name.text = "State"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -45,7 +45,7 @@ class MyAccountViewController: UIViewController {
     private let countyryLabel: UILabel = {
         let name = UILabel()
         name.text = "Country"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -53,7 +53,7 @@ class MyAccountViewController: UIViewController {
     private let nameValue: UILabel = {
         let name = UILabel()
         name.text = "Rajiv L K"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -61,7 +61,7 @@ class MyAccountViewController: UIViewController {
     private let emailvalue: UILabel = {
         let name = UILabel()
         name.text = "rajiv@ios.com"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -69,7 +69,7 @@ class MyAccountViewController: UIViewController {
     private let stateValue: UILabel = {
         let name = UILabel()
         name.text = "Tamil Nadu"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -77,7 +77,7 @@ class MyAccountViewController: UIViewController {
     private let countryValue: UILabel = {
         let name = UILabel()
         name.text = "India"
-        name.font = UIFont.boldSystemFont(ofSize: 15)
+        name.font = UIFont.boldSystemFont(ofSize: 18)
         name.textAlignment = .center
         return name
     }()
@@ -134,28 +134,28 @@ class MyAccountViewController: UIViewController {
         nameValue.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(screenlabel.snp.bottom).offset(40)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
         }
         
         self.view.addSubview(emailvalue)
         emailvalue.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(nameValue.snp.bottom).offset(20)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
         }
         
         self.view.addSubview(stateValue)
         stateValue.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(emailvalue.snp.bottom).offset(20)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
         }
         
         self.view.addSubview(countryValue)
         countryValue.snp.makeConstraints { (make) in
             make.right.equalToSuperview().offset(-20)
             make.top.equalTo(stateValue.snp.bottom).offset(20)
-            make.width.equalTo(100)
+            make.width.equalTo(200)
         }
     }
 

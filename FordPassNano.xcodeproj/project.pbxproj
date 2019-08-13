@@ -39,6 +39,8 @@
 		61E0BED22302A49C00867221 /* MockMyVehicleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BED12302A49C00867221 /* MockMyVehicleViewController.swift */; };
 		61E0BED42302A91C00867221 /* MockHelpTopicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BED32302A91C00867221 /* MockHelpTopicsViewController.swift */; };
 		61E0BED62302BA2E00867221 /* DetailedhelpSectionViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61E0BED52302BA2E00867221 /* DetailedhelpSectionViewControllerTests.swift */; };
+		61E0C1382302C66200867221 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0C1372302C66200867221 /* RxSwift.framework */; };
+		61E0C1392302C66200867221 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61E0C1372302C66200867221 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				61E0C1392302C66200867221 /* RxSwift.framework in Embed Frameworks */,
 				618AF0BE230174B10036076D /* SnapKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -110,6 +113,7 @@
 		61E0BED12302A49C00867221 /* MockMyVehicleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockMyVehicleViewController.swift; sourceTree = "<group>"; };
 		61E0BED32302A91C00867221 /* MockHelpTopicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockHelpTopicsViewController.swift; sourceTree = "<group>"; };
 		61E0BED52302BA2E00867221 /* DetailedhelpSectionViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedhelpSectionViewControllerTests.swift; sourceTree = "<group>"; };
+		61E0C1372302C66200867221 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61E0C1382302C66200867221 /* RxSwift.framework in Frameworks */,
 				618AF0BD230174B10036076D /* SnapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -141,6 +146,7 @@
 		618AF0822301737C0036076D = {
 			isa = PBXGroup;
 			children = (
+				61E0C1372302C66200867221 /* RxSwift.framework */,
 				618AF0BC230174B10036076D /* SnapKit.framework */,
 				618AF08D2301737C0036076D /* FordPassNano */,
 				618AF0A22301737F0036076D /* FordPassNanoTests */,
