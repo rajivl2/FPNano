@@ -13,7 +13,7 @@ class HomeViewController: UIViewController {
 
     weak var delegate: HomeViewControllerDelegate?
     
-    let appName: UILabel = {
+    private let appName: UILabel = {
         let name = UILabel()
         name.text = "FordPass Nano"
         name.font = UIFont.boldSystemFont(ofSize: 25)
@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         return name
     }()
     
-    let myVehicleButton: UIButton = {
+    private let myVehicleButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("My Vehicle", for: .normal)
         btn.backgroundColor = UIColor.clear
@@ -30,7 +30,7 @@ class HomeViewController: UIViewController {
         return btn
     }()
     
-    let myAccountButton: UIButton = {
+    private let myAccountButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("My Account", for: .normal)
         btn.backgroundColor = UIColor.clear
@@ -39,7 +39,7 @@ class HomeViewController: UIViewController {
         return btn
     }()
     
-    let needHelpButton: UIButton = {
+    private let needHelpButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Need Help?", for: .normal)
         btn.backgroundColor = UIColor.clear

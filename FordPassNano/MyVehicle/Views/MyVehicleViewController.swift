@@ -12,7 +12,7 @@ class MyVehicleViewController: UIViewController {
 
     weak var delegate: MyVehicleControllerDelegate?
     
-    let screenlabel: UILabel = {
+    private let screenlabel: UILabel = {
         let name = UILabel()
         name.text = "My Vehicle"
         name.font = UIFont.boldSystemFont(ofSize: 25)
@@ -20,17 +20,17 @@ class MyVehicleViewController: UIViewController {
         return name
     }()
     
-    let image = UIImageView(image: UIImage(named: "default"))
+    private let image = UIImageView(image: UIImage(named: "default"))
     
-    let vehicleName: UILabel = {
+    private let vehicleName: UILabel = {
         let name = UILabel()
-        name.text = "Ford Focus"
+        name.text = "Ford F-150"
         name.font = UIFont.boldSystemFont(ofSize: 20)
         name.textAlignment = .center
         return name
     }()
     
-    let myVehicleDetailsButton: UIButton = {
+    private let myVehicleDetailsButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Vehicle Details", for: .normal)
         btn.backgroundColor = UIColor.clear
@@ -44,6 +44,9 @@ class MyVehicleViewController: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = false
         self.view.backgroundColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         setUpViews()
     }
@@ -82,10 +85,10 @@ class MyVehicleViewController: UIViewController {
     }
     
     @objc func myVehicleDetailsButtonTapped(){
-        delegate?.myVehicleDetailsButtonTapped()
+        delegate?.myVehicleDetailsButtonTapped(myVehicle: VehicleDetails(vehicleName: "Ford F-150", vin: "V123ENG456M2019", frontRightTirePressure: "33kPA", frontLefttirePressure: "34kPA", rearRightTirePressure: "35kPA", rearLeftTirePressure: "35kPA", fuelLevel: "70%"))
     }
 }
 
 protocol MyVehicleControllerDelegate: class {
-    func myVehicleDetailsButtonTapped()
+    func myVehicleDetailsButtonTapped(myVehicle: VehicleDetails)
 }

@@ -28,13 +28,8 @@ class HelpSectionCoordinator: Coordinator{
 }
 
 extension HelpSectionCoordinator: HelpTopicsViewControllerDelegate{
-    func vehicleDetailsButtonTapped() {
-        let vehicleDetailsVC = MyVehicleDetailsViewController()
-        self.navigationController.pushViewController(vehicleDetailsVC, animated: true)
-    }
-    
-    func roadSideAssistanceButtonTapped() {
-        let roadSideAssVC = RoadSideAssistanceViewController()
-        self.navigationController.pushViewController(roadSideAssVC, animated: true)
+    func roadSideAssistanceButtonTapped(isRoadSideAssistanceSelected: Bool) {
+        let detailedHelpVC = DetailedHelpSectionViewController(isRoadSideAssistanceTapped: isRoadSideAssistanceSelected)
+        self.navigationController.pushViewController(detailedHelpVC, animated: true)
     }
 }

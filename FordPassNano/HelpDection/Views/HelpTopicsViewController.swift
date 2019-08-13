@@ -11,8 +11,9 @@ import UIKit
 class HelpTopicsViewController: UIViewController {
 
     weak var delegate: HelpTopicsViewControllerDelegate?
+    private var roadSideAssistance = false
     
-    let screenlabel: UILabel = {
+    private let screenlabel: UILabel = {
         let name = UILabel()
         name.text = "Help Topics"
         name.font = UIFont.boldSystemFont(ofSize: 25)
@@ -20,7 +21,7 @@ class HelpTopicsViewController: UIViewController {
         return name
     }()
     
-    let roadSideAssistanceButton: UIButton = {
+    private let roadSideAssistanceButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Road Side Assistance", for: .normal)
         btn.backgroundColor = UIColor.clear
@@ -30,7 +31,7 @@ class HelpTopicsViewController: UIViewController {
         return btn
     }()
     
-    let vehicleDetailsButton: UIButton = {
+    private let vehicleDetailsButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Vehicle Details", for: .normal)
         btn.backgroundColor = UIColor.clear
@@ -45,6 +46,9 @@ class HelpTopicsViewController: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = false
         self.view.backgroundColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        
+        navigationController?.navigationBar.barTintColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         setUpViews()
     }
@@ -78,16 +82,17 @@ class HelpTopicsViewController: UIViewController {
     }
     
     @objc func roadSideAssistanceButtonTapped(){
-        delegate?.roadSideAssistanceButtonTapped()
+        roadSideAssistance = true
+        delegate?.roadSideAssistanceButtonTapped(isRoadSideAssistanceSelected: roadSideAssistance)
     }
     
     @objc func vehicleDetailsButtonTapped(){
-        delegate?.vehicleDetailsButtonTapped()
+        roadSideAssistance = false
+        delegate?.roadSideAssistanceButtonTapped(isRoadSideAssistanceSelected: roadSideAssistance)
     }
 
 }
 
 protocol HelpTopicsViewControllerDelegate: class {
-    func roadSideAssistanceButtonTapped()
-    func vehicleDetailsButtonTapped()
+    func roadSideAssistanceButtonTapped(isRoadSideAssistanceSelected: Bool)
 }

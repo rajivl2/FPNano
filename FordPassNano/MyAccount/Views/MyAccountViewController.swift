@@ -10,7 +10,7 @@ import UIKit
 
 class MyAccountViewController: UIViewController {
 
-    let screenlabel: UILabel = {
+    private let screenlabel: UILabel = {
         let name = UILabel()
         name.text = "My Account"
         name.font = UIFont.boldSystemFont(ofSize: 25)
@@ -18,7 +18,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let nameLabel: UILabel = {
+    private let nameLabel: UILabel = {
         let name = UILabel()
         name.text = "Name"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -26,7 +26,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let emailLabel: UILabel = {
+    private let emailLabel: UILabel = {
         let name = UILabel()
         name.text = "Email"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -34,7 +34,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let stateLabel: UILabel = {
+    private let stateLabel: UILabel = {
         let name = UILabel()
         name.text = "State"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -42,7 +42,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let countyryLabel: UILabel = {
+    private let countyryLabel: UILabel = {
         let name = UILabel()
         name.text = "Country"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -50,7 +50,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let nameValue: UILabel = {
+    private let nameValue: UILabel = {
         let name = UILabel()
         name.text = "Rajiv L K"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -58,7 +58,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let emailvalue: UILabel = {
+    private let emailvalue: UILabel = {
         let name = UILabel()
         name.text = "rajiv@ios.com"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -66,7 +66,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let stateValue: UILabel = {
+    private let stateValue: UILabel = {
         let name = UILabel()
         name.text = "Tamil Nadu"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -74,7 +74,7 @@ class MyAccountViewController: UIViewController {
         return name
     }()
     
-    let countryValue: UILabel = {
+    private let countryValue: UILabel = {
         let name = UILabel()
         name.text = "India"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -87,6 +87,8 @@ class MyAccountViewController: UIViewController {
 
         self.navigationController?.isNavigationBarHidden = false
         self.view.backgroundColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        navigationController?.navigationBar.barTintColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
+        navigationController?.navigationBar.tintColor = UIColor.black
         
         setUpViews()
     }

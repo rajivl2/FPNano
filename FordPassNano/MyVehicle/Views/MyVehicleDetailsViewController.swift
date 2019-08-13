@@ -10,15 +10,16 @@ import UIKit
 
 class MyVehicleDetailsViewController: UIViewController {
 
-    let screenlabel: UILabel = {
+    private var myVehicle: VehicleDetails?
+    
+    private let screenlabel: UILabel = {
         let name = UILabel()
-        name.text = "Vehicle Details - Night Furry"
         name.font = UIFont.boldSystemFont(ofSize: 25)
         name.textAlignment = .center
         return name
     }()
     
-    let vinLabel: UILabel = {
+    private let vinLabel: UILabel = {
         let name = UILabel()
         name.text = "VIN"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -26,7 +27,7 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let fuelLevelLabel: UILabel = {
+    private let fuelLevelLabel: UILabel = {
         let name = UILabel()
         name.text = "Fuel Level"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -34,23 +35,21 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let vinValue: UILabel = {
+    private let vinValue: UILabel = {
         let name = UILabel()
-        name.text = "HYJDOOp756242HJL"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
     }()
     
-    let fuelLevelValue: UILabel = {
+    private let fuelLevelValue: UILabel = {
         let name = UILabel()
-        name.text = "50%"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
     }()
     
-    let tirePressureLabel: UILabel = {
+    private let tirePressureLabel: UILabel = {
         let name = UILabel()
         name.text = "Tire Pressure"
         name.font = UIFont.boldSystemFont(ofSize: 20)
@@ -58,7 +57,7 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let fronLeftLabel: UILabel = {
+    private let fronLeftLabel: UILabel = {
         let name = UILabel()
         name.text = "Front Left"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -66,7 +65,7 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let frontRightLabel: UILabel = {
+    private let frontRightLabel: UILabel = {
         let name = UILabel()
         name.text = "Front Right"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -74,7 +73,7 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let rearLeftLabel: UILabel = {
+    private let rearLeftLabel: UILabel = {
         let name = UILabel()
         name.text = "Rear Left"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -82,7 +81,7 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let rearRightLabel: UILabel = {
+    private let rearRightLabel: UILabel = {
         let name = UILabel()
         name.text = "Rear Right"
         name.font = UIFont.boldSystemFont(ofSize: 15)
@@ -90,33 +89,29 @@ class MyVehicleDetailsViewController: UIViewController {
         return name
     }()
     
-    let fronLeftValue: UILabel = {
+    private let fronLeftValue: UILabel = {
         let name = UILabel()
-        name.text = "35 kPA"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
     }()
     
-    let frontRightValue: UILabel = {
+    private let frontRightValue: UILabel = {
         let name = UILabel()
-        name.text = "35 kPA"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
     }()
     
-    let rearLeftValue: UILabel = {
+    private let rearLeftValue: UILabel = {
         let name = UILabel()
-        name.text = "33 kPA"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
     }()
     
-    let rearRightvalue: UILabel = {
+    private let rearRightvalue: UILabel = {
         let name = UILabel()
-        name.text = "33 kPA"
         name.font = UIFont.boldSystemFont(ofSize: 15)
         name.textAlignment = .center
         return name
@@ -129,9 +124,19 @@ class MyVehicleDetailsViewController: UIViewController {
         self.view.backgroundColor = UIColor(red: 110/255, green: 160/255, blue: 180/255, alpha: 1)
         
         setUpViews()
+        
+        setUpData()
     }
     
-
+    init(vehicleDetail: VehicleDetails) {
+        self.myVehicle = vehicleDetail
+        super.init(nibName: nil, bundle: nil)
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     func setUpViews(){
         
         self.view.addSubview(screenlabel)
@@ -231,6 +236,16 @@ class MyVehicleDetailsViewController: UIViewController {
             make.top.equalTo(rearLeftValue.snp.bottom).offset(20)
             make.width.equalTo(100)
         }
+    }
+    
+    func setUpData(){
+        self.screenlabel.text = self.myVehicle?.vehicleName
+        self.vinValue.text = self.myVehicle?.vin
+        self.frontRightValue.text = self.myVehicle?.frontRightTirePressure
+        self.fronLeftValue.text = self.myVehicle?.frontLefttirePressure
+        self.rearRightvalue.text = self.myVehicle?.rearRightTirePressure
+        self.rearLeftValue.text = self.myVehicle?.rearLeftTirePressure
+        self.fuelLevelValue.text = self.myVehicle?.fuelLevel
     }
 
 }

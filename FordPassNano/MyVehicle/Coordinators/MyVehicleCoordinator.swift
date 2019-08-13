@@ -27,8 +27,8 @@ class MyVehicleCoordinator: Coordinator {
 }
 
 extension MyVehicleCoordinator: MyVehicleControllerDelegate{
-    func myVehicleDetailsButtonTapped() {
-        let myVehicleDetailsVC = MyVehicleDetailsViewController()
+    func myVehicleDetailsButtonTapped(myVehicle: VehicleDetails) {
+        let myVehicleDetailsVC = MyVehicleDetailsViewController(vehicleDetail: myVehicle)
         self.navigationController.pushViewController(myVehicleDetailsVC, animated: true)
     }
 }
